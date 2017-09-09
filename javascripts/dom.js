@@ -31,12 +31,13 @@ var CatStore = ((oldCatStore) => {
             catz += newCat;
         }
 
-		CatStore.writeToDom(niceString)
+		CatStore.writeToDom(catz);
 	};
 
 	oldCatStore.writeToDom = (strang) =>{
 		let fancyPetStore = document.getElementById("fancyPetStore");
 		fancyPetStore.innerHTML = strang;
+		console.log(strang);
 	};
 
 

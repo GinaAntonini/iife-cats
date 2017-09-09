@@ -1,4 +1,14 @@
-// var CatStore = ((oldCatStore) => {
+var CatStore = ((oldCatStore) => {
+	let owners = [];
 
-// return oldCatStore;
-// })(CatStore || {});
+	oldCatStore.getOwners = () => {
+		return owners;
+	}
+
+	oldCatStore.setAllOwners = (allMyOwners) =>{
+		owners = allMyOwners;
+	}
+
+return oldCatStore;
+})(CatStore || {});
+
