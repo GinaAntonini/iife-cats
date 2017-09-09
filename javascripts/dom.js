@@ -37,7 +37,7 @@ var CatStore = ((oldCatStore) => {
 	oldCatStore.writeToDom = (strang) =>{
 		let fancyPetStore = document.getElementById("fancyPetStore");
 		fancyPetStore.innerHTML = strang;
-		console.log(strang);
+		// console.log(strang);
 	};
 
 
